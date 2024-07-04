@@ -1,16 +1,16 @@
-import * as S from './styles'
+import * as S from "./styles";
 
 export type Props = {
-  ativo: boolean
-  contador: number
-  legenda: string
-}
+  ativo: boolean;
+  contador: number;
+  legenda: string;
+};
 
-const FilterCard = ({ativo, contador, legenda}: Props) => (
-  <S.Card {ativo}>
+const FilterCard = ({ ativo, contador, legenda }: Props) => (
+  <S.Card ativo={ativo}>
     <S.Contador>{contador}</S.Contador>
     <S.Label>{legenda}</S.Label>
   </S.Card>
-)
+);
 
-export default FilterCard
+export default FilterCard;
